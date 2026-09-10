@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <title>Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Test SPOD link</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; max-width:900px; margin:2rem auto; padding:0 1rem; line-height:1.5; }
+    a.button { display:inline-block; padding:0.6rem 1rem; background:#0b69ff; color:#fff; text-decoration:none; border-radius:6px; }
+    .note { color:#555; margin-top:0.5rem; }
+    iframe { border:1px solid #ddd; border-radius:6px; margin-top:1rem; }
+  </style>
 </head>
 <body>
 
-<h1>Test SPOD  link Art a</h1>
+  <h1>Test SPOD</h1>
 
+  <p>Se la pagina non viene visualizzata dentro a un iframe (molti siti lo bloccano), aprila direttamente con questo link:</p>
+
+  <p><a class="button" href="https://spod.neolaiacampus.eu/datalet/1061" target="_blank" rel="noopener noreferrer">Apri il datalet SPOD (nuova scheda)</a></p>
+
+  <p class="note">Nota: se il sito richiede accesso/ autenticazione o invia intestazioni che proibiscono l'embed (ad es. X-Frame-Options o Content-Security-Policy), l'iframe non funzionerà — in quel caso usa il link sopra.</p>
+
+  <details>
+    <summary>Prova con iframe (se il sito lo permette)</summary>
+    <iframe
+      src="https://spod.neolaiacampus.eu/datalet/1061"
+      width="100%"
+      height="800"
+      title="SPOD datalet">
+    </iframe>
+  </details>
+
+  <hr>
+  <p class="note">Per testare: salva questa pagina come <code>index.htm</code> e aprila nel browser (non come file:// se vuoi usare funzionalità di hosting). Controlla la Console (F12 → Console / Network) per eventuali errori o intestazioni che bloccano l'embed.</p>
 
 </body>
 </html>
